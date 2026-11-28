@@ -7,9 +7,20 @@ Account: paper trading shares. Options deferred until live.
 Limits: $300 daily loss, hard stop after 2 losses in a row, $150 risk at full size.
 Charts: weekly, daily, 4h, 30m, 5m. No 1m chart for entries or exits.
 
+## Before every trade
+
+No card, no trade. Any "no" means no trade.
+
+1. **Higher timeframe context:** Have I defined the structure, the trend, and which of my four setups this is?
+2. **Market:** Is QQQ with me? Ranging: quarter size. Against me: no trade.
+3. **Stock:** Is this the strongest name on my card, still holding structure when QQQ dips?
+4. **Location:** Am I at a range edge or a wick fill, with room? 2:1 for a range trade, more than 1:1 otherwise.
+5. **Trigger:** Has the 5m candle closed?
+6. **Risk and exit:** Where am I wrong, where do I sell 60%, and how many shares does the gate give me?
+
 ## Before the session
 
-Tick every item before you start. Starting the session locks your rules and limits until tomorrow.
+Tick every item and write your trade cards before you start. Starting the session locks your rules, limits and cards until tomorrow.
 
 - Weekly, daily and 4h levels and 20 EMAs are marked.
 - QQQ is read: trending or ranging, long day or short day.
@@ -31,18 +42,30 @@ Read your top three mistakes (below) and run the examples drill until every answ
 | Reclaim | Price takes out a low, then a 5m candle closes back inside the higher-timeframe candle's body, above its open. |
 | Anchor | The highest timeframe where a wick fill is in play. Higher anchor, better risk-to-reward. |
 
+## Trading ranges
+
+One standard for every range, on any timeframe: premarket, 30m, 4h, the prior day's range, daily or weekly. Triggers and entries are in step 5.
+
+- **Range low to range high:** price comes up from the range low with trend and structure behind it. Take it to the range high.
+- **Range high to range low:** the mirror for shorts.
+- **From the open to the prior day's high or low:** price trades above the premarket high, trends, and holds its 30m structure. Take it to the prior day's high. For shorts, below the premarket low, take it to the prior day's low.
+- **Middle of the range:** no trade.
+- **Room:** at least 2:1 to the other side of the range. Under that, no trade.
+- **Leaks:** price can leak a range, trading past its high or low intracandle. Do nothing until the candle closes.
+- **Failure:** a range trade fails when price fails to make a new high (for longs) or a new low (for shorts). When that happens, price often goes to the other side of the range.
+
 ## The six steps
 
 | Step | Timeframes | Question |
 |---|---|---|
-| 1. Direction and daily setup | Weekly, Daily, 4h | Which way, and is today a setup day? |
+| 1. Higher timeframe context | Weekly, Daily, 4h | Which way, and is today a setup day? |
 | 2. Market | QQQ | What direction, and what size? |
 | 3. Stock | 5m vs QQQ | Which name? |
 | 4. Location | Weekly, Daily, 4h, 30m | Is the trade worth taking here? |
 | 5. Trigger | 5m | When do I enter? |
 | 6. Risk and exit | 5m | How much can I lose, when do I take profit, and when am I out? |
 
-### 1. Direction and daily setup (weekly, daily, 4h)
+### 1. Higher timeframe context (weekly, daily, 4h)
 
 - **Displacement:** a candle closes above the prior candle's high.
 - **Ranging:** after displacement, price ranges. A leak below the range low is fine if the candle closes back inside.
@@ -50,23 +73,18 @@ Read your top three mistakes (below) and run the examples drill until every answ
 - **Weekly:** is price above last week's range or inside it? A weekly close above the range sets the foundation for higher prices.
 - **Anchor:** the highest timeframe where a wick fill is in play.
 - **20 EMA filter (weekly, daily, 4h):** longs above the 20 EMA, shorts below. If price is ranging around it, reduced size and wait for a range break.
-- **Below the prior day's low, no longs.** Mean reversion setups are deferred and not traded for now.
+- **Below the prior day's low, no longs.**
 - **The open sets the bias:**
   - **Gap above the prior day's high:** what you want for longs. Look for the wick fill.
-  - **Inside the prior day's range:** a fallback. Names gapping above the prior day's high (or below its low for shorts) come first. Use these rules only when QQQ is ranging and no name is gapping. Quarter size maximum. The trend is still bullish, so look for longs near the prior day's low. More often than not, price touches the prior day's low before it tests the prior day's high. It's the same idea as a bigger daily range, where you go long on the gap above a candle that held the range lows. This only applies to range lows and highs on the daily and weekly, like the prior day's low. It does not mean trading every 30m or 4h range.
-    - **Premarket held near the prior day's low:** the trigger is a 5m close above the premarket range.
-    - **Premarket already touched the prior day's low:** wait for a wick fill on the 30m, then a 5m trigger.
-    - **Premarket mid-range, 30m holding structure and trend:** only if the last premarket 30m candle (9:00) closed above the premarket range (7:00 to 9:30). Then look for a wick fill of that range at the open, and a 5m trigger.
-    - **A 30m range during the session:** a leak of the range low is not enough. Wait for a 5m candle to make a new high above the range, then the wick fill, then a 5m trigger. Very often price fails to make that new high, and the downtrend takes it to the prior day's low.
-    - **Room:** on an inside day the first target is the prior day's high (the prior day's low for shorts). Below 2:1 to it, no trade.
-    - **Premarket mid-range, trend broke structure:** no trade until the prior day's low or high is hit first. If the low is hit, it's a long near the prior day's low. If the high is hit, it's the same as a gap up: look for the wick fill of the prior day's high.
+  - **Inside the prior day's range:** a fallback. Names gapping above the prior day's high (or below its low for shorts) come first. Only when QQQ is ranging and no name is gapping, trade the prior day's range like any other range (see Trading ranges). Quarter size maximum.
   - **Gap below the prior day's low:** no wick fill possible for longs. Only a reclaim counts, and only with the weekly, daily and 4h above the 20 EMA. In a bearish daily trend there are no reclaims, only wick fills for continuation lower.
   - **No reclaim, and the daily closes below the prior day's low:** price is either building a bigger daily range, or the trend has turned bearish. The second is typical when the daily has reached a prior weekly high.
-- **The daily must be one of three setups:**
+- **The daily must be one of four setups:**
   - **Range displacement:** the daily displaces above its range, and later candles wick fill the range high.
   - **Reclaim:** only with the weekly, daily and 4h above the 20 EMA. Prior days are bullish, or price is inside a weekly range. The daily opens below the prior day's low (or a previously lost low) and reclaims it.
   - **Reversal:** a daily candle leaks below a key low, ideally aligned with the weekly low, and closes back above it. The next day gaps above that candle's high.
-- **Entry principle for all three:** price opens above the prior day's high or the range high, wick fills the prior day's high or close, rejects, and continues.
+  - **Gap fill (mean reversion):** a wick fill of the gap back to the prior day's close, against the daily trend. Half size maximum. The signs: the gap up opens near a prior daily high it couldn't close above, and before the open the 30m trends down inside the range and breaks the 4h low. The location is the wick fill of that broken structure, and the target is the prior day's close. QQQ can set up the same way (step 2).
+- **Entry principle for the first three:** price opens above the prior day's high or the range high, wick fills the prior day's high or close, rejects, and continues.
 - **Bias holds until the wick fill fails** (step 6). Nothing else on a lower timeframe changes it.
 
 ### 2. Market (QQQ)
@@ -74,10 +92,11 @@ Read your top three mistakes (below) and run the examples drill until every answ
 - Read QQQ with the same rules as step 1.
 - **QQQ trending:** only trade in QQQ's direction.
 - **QQQ ranging:** low-probability conditions. Trading is discretionary, quarter size maximum. Direction comes from the stock's own higher-timeframe trend. Focus on names showing relative strength or weakness against QQQ.
+- **QQQ gap fill:** QQQ can set up the same gap fill as in step 1. When it does, the fill to the prior day's close is its likely path at the open.
 
 ### 3. Stock
 
-- **Premarket watchlist, leaders only:** names gapping above the prior day's high (below the prior day's low for shorts) come first. Only when QQQ is ranging and no name is gapping do you use the inside-day rules.
+- **Premarket watchlist, leaders only:** names gapping above the prior day's high (below the prior day's low for shorts) come first. Only when QQQ is ranging and no name is gapping do you trade names inside the prior day's range.
   - Opening above the prior day's high.
   - Its sector or theme is gapping the same way, and the sector ETF is trending.
   - Room to a weekly high (the target).
@@ -92,9 +111,10 @@ Read your top three mistakes (below) and run the examples drill until every answ
 ### 4. Location (weekly, daily, 4h, 30m)
 
 - **Higher-timeframe location:** price displaced above a prior candle or multi-week range and is now wick filling it.
-- **Entry location A, range low:** 4h and 30m are ranging after displacement. Price leaks the range low and reclaims it. Smallest stop, most room to target.
-- **Entry location B, tight range above the highs:** a tight range just above the highs, usually a 30m range lining up with the premarket range. Price leaks the tight range low (the wick fill), then closes above the premarket range high and continues.
-- **Inside day:** when the open is inside the prior day's range, A and B don't apply. Long only near the prior day's low, at the wick fill of a premarket range the 9:00 30m candle closed above, at the wick fill of a 30m range after a 5m new high above it, or at the wick fill of the prior day's high once it was hit first. Quarter size maximum, and at least 2:1 room to the prior day's high.
+- **Range low, leaked and reclaimed:** 4h and 30m are ranging after displacement. Price leaks the range low and reclaims it. Smallest stop, most room to target.
+- **Wick fill of a tight range above the highs:** a tight range just above the highs, usually a 30m range lining up with the premarket range. Price leaks the tight range low (the wick fill), then closes above the premarket range high and continues.
+- **Ranges, including the prior day's range:** see Trading ranges.
+- **Gap fill:** the wick fill of the broken 4h low or 30m structure.
 - **Not here:** middle of the 30m range, at the range high, or near the daily target or a key level.
 
 ### 5. Trigger (5m)
@@ -116,12 +136,14 @@ Only valid inside the step 4 location. Always wait for the candle to close.
 |---|---|
 | Daily | Premarket range (30m or 4h), with the prior day's close as the final line |
 | Reclaim | The low that was reclaimed |
+| Gap fill | The broken 4h low or 30m structure |
 | 4h or 30m | The range it displaced from |
 | Weekly | No rule. Discretionary, and you don't typically trade the weekly |
 
 - **First profit:** take 60% off at the high of day (low of day for shorts).
 - **Runner:** the remaining 40%. Exit rule pending; the 30m candle is the candidate.
 - **Right:** price reaches the next 4h or daily target.
+- **Prior day's close:** a target when shorting with the higher-timeframe structure and trend bearish, for example when a gap up fills back to it.
 - **Shares sizing:** dollar risk divided by the distance from entry to stop.
 - **Re-entry:** only with a new valid trigger in a valid location, with all steps passing again.
 
@@ -131,35 +153,71 @@ Only valid inside the step 4 location. Always wait for the candle to close.
 |---|---|
 | Confirmed entry, QQQ trending | Full |
 | Unconfirmed entry (no wick fill) | Half |
+| Gap fill (mean reversion) | Half max |
 | QQQ or 20 EMA picture ranging | Quarter max |
 | Opened inside the prior day's range | Quarter max |
 | Less than 2:1 room to first target | Quarter max |
-| Inside day, less than 2:1 room to the prior day's high | No trade |
+| Range trade, less than 2:1 to the other side of the range | No trade |
 | 1:1 room or less | No trade |
+
+## Trade cards
+
+No card, no trade. Write a card for each name you might trade, after the 9:00 30m candle closes and before you start the session. Starting the session locks the cards: you can cancel one, but not add one or change it.
+
+- **Night before:** watchlist from the higher timeframe only, names showing one of your three daily setups.
+- **9:00 to 9:25 ET:** premarket shows the open. Write a card for each name you might trade, 3 at most.
+- **9:35 ET:** first 5m close. Cancel the cards for names that didn't confirm.
+- **Session:** only what's on a card.
+
+Each card has:
+
+- **Symbol and direction.**
+- **Context:** daily and 4h structure, the open, and QQQ.
+- **Location and trigger:** the only thing on this card that can become a trade.
+- **Invalidation price.**
+- **Target price,** and what it is (high of day, prior day's close).
+- **Too-late price:** the last price you'd still enter at. It has to leave more than 1:1 to the target.
+- **Cancel the card if:** for example, QQQ's 30m closes above its premarket high.
+
+Example, the AMD card for Nov 27:
+
+| Field | What you'd have written |
+|---|---|
+| Context | Daily and 4h bearish. Gapped above the prior day's high, premarket weak. QQQ 4h and 30m ranging, so quarter size. |
+| Location and trigger | Back below the prior day's high, a 5m close inside the prior day's body, short the break of that candle's low. Or a wick fill of the 30m range high, then a 5m trigger. |
+| Invalidation | A 5m close back above the level, then a break of that candle's high. |
+| Target | The prior day's close: the gap fill. |
+| Too-late price | Where the room to the prior day's close drops to 1:1. |
+| Cancel if | QQQ's 30m closes above its premarket high. |
+| What happened | Price went straight to the prior day's close at the open. Neither trigger came before the too-late price, so no trade. The short you took was past it. |
 
 ## The trade gate
 
 Every line has to pass before you place an order. If the setup leaves without you, it wasn't yours.
 
-1. **The open supports the trade:** a gap above the prior day's high, or inside the prior day's range. A gap below the prior day's low only counts as a reclaim with the 20 EMA aligned.
-2. **Inside days only, inside-day rules apply:** QQQ is ranging, and no name on your watchlist is gapping above the prior day's high or below the prior day's low. Otherwise, trade the names that gapped.
-3. **One of the three daily setups.** A reclaim only counts with the weekly, daily and 4h 20 EMA aligned.
-4. **Not below the 20 EMA** on the weekly, daily and 4h.
-5. **QQQ is not trending against you.**
-6. **Location:**
-   - Normal day: location A or B.
-   - Inside day: near the prior day's low; the wick fill after the 9:00 30m candle closed above a premarket range that held its trend; the wick fill of a 30m range after a 5m new high above it; or the wick fill of the prior day's high once it was hit first.
-   - Blocked on an inside day: a leak of a 30m range low with no new high above the range yet, or premarket structure broke and the prior day's low or high hasn't been hit yet.
-7. **Entry type chosen:** confirmed, unconfirmed, or reclaim.
-8. **Every check confirmed:**
-   - Price is not below the prior day's low.
-   - It's the strongest on my shortlist and held structure when QQQ pulled back.
-   - The 5m candle has closed.
-   - I'm not using the 1m chart for this entry.
-9. **Stop below entry, first target above.**
-10. **Room:** more than 1:1 to the first target. On an inside day, at least 2:1 to the prior day's high.
-11. **At least 1 share fits the risk allowed.**
-12. **Calm, not reacting.** Any other feeling blocks the trade:
+1. **Matches a card written before the open,** in the same direction.
+2. **Entry is not past the card's too-late price.**
+3. **The open supports the trade:** a gap above the prior day's high, or inside the prior day's range. A gap below the prior day's low only counts as a reclaim with the 20 EMA aligned. For a gap fill, the open has to leave a gap to the prior day's close.
+4. **Inside days only (not for a gap fill), inside-day rules apply:** QQQ is ranging, and no name on your watchlist is gapping above the prior day's high or below the prior day's low. Otherwise, trade the names that gapped.
+5. **One of the four setups.** A reclaim only counts with the weekly, daily and 4h 20 EMA aligned.
+6. **Not below the 20 EMA** on the weekly, daily and 4h. Skipped for a gap fill, which is against the trend by definition.
+7. **QQQ is not trending against you.**
+8. **Location:**
+   - Normal day: a range low, leaked and reclaimed, or the wick fill of a tight range above the highs.
+   - Gap fill: the wick fill of the broken 4h low or 30m structure.
+   - Inside day: range low to range high with trend and structure, or from the open above the premarket high, holding 30m structure, to the prior day's high.
+   - Blocked on an inside day: the middle of the range, a failed range (no new high), or a leak with the candle not closed yet.
+9. **Entry type chosen:** confirmed, unconfirmed, or reclaim.
+10. **Every check confirmed:**
+    - Price is not below the prior day's low.
+    - It's the strongest on my shortlist and held structure when QQQ pulled back.
+    - The 5m candle has closed.
+    - I'm not using the 1m chart for this entry.
+    - For a gap fill, instead of the prior-day check: it opened above the prior day's close near a prior daily high it couldn't close above, and before the open the 30m trended down inside the range and broke the 4h low.
+11. **Stop below entry, first target above.**
+12. **Room:** more than 1:1 to the first target. For a range trade on an inside day, at least 2:1 to the other side of the range.
+13. **At least 1 share fits the risk allowed.**
+14. **Calm, not reacting.** Any other feeling blocks the trade:
     - Afraid to miss the move: missing a move costs nothing. Chasing one costs money.
     - Want to win back a loss: this is a revenge trade. The market does not owe you your loss back.
     - Bored, looking for action: boredom is not a setup. Most good sessions are mostly waiting.
@@ -190,28 +248,28 @@ When every line passes, the gate gives you the share count: the risk allowed for
 
 ## Mistakes to avoid
 
-From your journals: 117 mistakes of 12 kinds, ranked by how often they show up. The top three make up 48 of them. Read these before every session.
+From your journals and reviews: 125 mistakes of 13 kinds, ranked by how often they show up. The top three make up 53 of them. Read these before every session.
 
-1. **Selling winners early (20 times)**
+1. **Selling winners early (22 times)**
    - "Sold AMD at 533, it went all the way to 560."
    - "BE, cut it too quickly, it ran to $300."
    - Rule: sell 60% at the high of day. The rest only exits on invalidation.
-2. **Entering before the candle closes (15)**
+2. **Entering before the candle closes (17)**
    - "Pulled the trigger too early, didn't wait for the 5m close."
    - "MRNA tried to long before 5m closes above highs, and got punished for it."
    - Rule: only click buy after a 5m candle has closed.
-3. **Trading against the higher timeframe (13)**
+3. **Bad location or poor risk-to-reward (14)**
+   - "The PLTR trade, you were chasing it at PDH. Horrible risk reward."
+   - "Shorting QQQ while it was at bottom of a 30m range."
+   - Rule: a range edge or a wick fill only. 1:1 or less is no trade.
+4. **Trading against the higher timeframe (13)**
    - "Tried to get long on AMD when the higher time frame was bearish."
    - "Letting the 5m fluctuations change bias."
    - Rule: longs above the 20 EMA only. The open sets the bias, and it holds until the wick fill fails.
-4. **Hesitating on a valid setup (13)**
+5. **Hesitating on a valid setup (13)**
    - "MU today I had hesitation entering even though all the checkboxes were ticked."
    - "I was thinking of entering AMD at 528, didn't pull the trigger… it ran to 537, $540 profit lost."
    - Rule: if every gate is green, take it. The loss is already capped at your risk.
-5. **Bad location or poor risk-to-reward (12)**
-   - "The PLTR trade, you were chasing it at PDH. Horrible risk reward."
-   - "Shorting QQQ while it was at bottom of a 30m range."
-   - Rule: location A, B, or an inside-day location only. 1:1 or less is no trade.
 6. **Holding losers or moving the stop (11)**
    - "3 chances to get out for small loss instead of it spiraling out of control… 659.75 loss."
    - "You still don't know your level of invalidation, keep changing stop."
@@ -232,7 +290,7 @@ From your journals: 117 mistakes of 12 kinds, ranked by how often they show up. 
     - "Flipping short to long. Overtrading."
     - "We need to fix overtrading UAL."
     - Rule: two losses in a row or -$300 and you're done for the day.
-11. **Entering without knowing the exit (4)**
+11. **Entering without knowing the exit (5)**
     - "I did not like holding position after it was retracing, didn't know my exit criteria."
     - "I saw the 30m candle looked “bullish”, I wasn't clear on my exit."
     - Rule: stop and target go into the gate before it can clear.
@@ -240,6 +298,9 @@ From your journals: 117 mistakes of 12 kinds, ranked by how often they show up. 
     - "Was not aligned with QQQ direction."
     - "SPY & AMD puts were on-play. You decided to play calls on AAPL & GOOGL."
     - Rule: QQQ trending against you blocks the trade.
+13. **Trading outside the session window (1)**
+    - "It was close to a prior daily high and was trading around 12:30pm on a short trading day."
+    - Rule: the session is 9:30 to 11:00 ET. After 11:00 there are no new trades, half days included.
 
 ## Examples
 
@@ -249,8 +310,8 @@ The canvas draws each of these as a chart. In the drill they come in random orde
 
 | Example | Timeframe | Answer | Rule |
 |---|---|---|---|
-| Gap above the prior day's high | Daily | Look for longs | Gap above the prior day's high, wick fill, rejection. This is the entry principle for all three daily setups. |
-| Opens inside the prior day's range | Daily | Quarter size max | The trend is still bullish, so look for longs, but quarter size maximum and only near the prior day's low. More often than not, price touches the prior day's low before it tests the prior day's high. |
+| Gap above the prior day's high | Daily | Look for longs | Gap above the prior day's high, wick fill, rejection. This is the entry principle for the first three daily setups. |
+| Opens inside the prior day's range | Daily | Quarter size max | A fallback when QQQ is ranging and no name is gapping. Trade the prior day's range like any other range, at quarter size maximum. |
 | Gap below the prior day's low, uptrend | Daily | Look for longs | A reclaim. It only counts because the 20 EMA is aligned on the weekly, daily and 4h. |
 | Gap below the prior day's low, downtrend | Daily | No longs | Same open, bearish trend. Below the 20 EMA there are no reclaims. The move up is a wick fill for shorts. |
 | Reversal at a key low | Daily | Look for longs | A reversal: the low held, and the next day gapped above the reversal candle's high. |
@@ -259,16 +320,18 @@ The canvas draws each of these as a chart. In the drill they come in random orde
 
 | Example | Timeframe | Answer | Rule |
 |---|---|---|---|
-| Leak of the 30m range low | 30m | Trade | Location A. Ranging after displacement, leak of the range low, reclaim. Smallest stop, most room to target. |
-| Tight range above the highs | 30m | Trade | Location B. A tight range just above the highs, a leak of its low, then a close above the premarket high. |
+| Leak of the 30m range low | 30m | Trade | A range edge. Ranging after displacement, leak of the range low, reclaim. Smallest stop, most room to target. |
+| Tight range above the highs | 30m | Trade | A wick fill. A tight range just above the highs, a leak of its low, then a close above the premarket high. |
 | Middle of the 30m range | 30m | No trade | The stop is as wide as at the edge, with half the room. This is where you get chopped. |
 | Into the daily target | 30m | No trade | 1:1 or less means no trade, however strong it looks. |
-| Inside day, premarket trend broke structure | 30m | No trade | Premarket was trending but broke structure. Wait for the prior day's low or high to be hit first. |
-| Inside day, premarket already touched the prior day's low | 30m | Trade | Premarket already touched the prior day's low, and the 30m wick filled. This is the location. Quarter size, and the entry still needs a 5m trigger. |
-| Inside day, 9:00 candle closes above the premarket range | 30m | Trade | Premarket held its structure and trend, and the 9:00 30m candle closed above the range. The wick fill at the open is the location. Quarter size, and the entry still needs a 5m trigger. |
-| Inside day, structure broke, then the prior day's high is hit first | 30m | Trade | Once the prior day's high is hit first, it's the same as a gap up: look for the wick fill of the prior day's high. The entry still needs a 5m trigger. |
-| Inside day, leak of the 30m range low, no new high | 30m | No trade | On an inside day a leak of the 30m range low is not enough. Wait for a 5m new high above the range, then the wick fill. Very often price fails to make it and trends down to the prior day's low. |
-| Inside day, new high and wick fill, but 1:1 to the prior day's high | 5m | No trade | The setup is right, but on an inside day the target is the prior day's high. Below 2:1 to it, no trade. |
+| Range trade fails: no new high | 30m | No trade | The range trade failed: no new high. When that happens, price often goes to the other side of the range. |
+| Range low to range high | 30m | Trade | Price is coming up from the range low with trend and structure behind it. The target is the range high, and the entry still needs a 5m trigger. |
+| From the open to the prior day's high | 30m | Trade | Above the premarket high, trending and holding 30m structure. Take it to the prior day's high. The entry still needs a 5m trigger. |
+| Range high to range low (short) | 30m | Trade | The mirror for shorts: coming down from the range high with trend and structure. The target is the range low, and the entry still needs a 5m trigger. |
+| Middle of the prior day's range | 30m | No trade | The middle of any range is no trade, on any timeframe. Wait for price to come from one side of the range. |
+| Range low long, under 2:1 to the range high | 5m | No trade | A range trade needs at least 2:1 to the other side of the range. This is 1.6:1, so no trade. |
+| Gap up, the 30m broke the 4h low before the open (short) | 30m | Trade | A gap fill against the daily trend, half size. The wick fill of the broken structure is the location, the prior day's close is the target, and the entry still needs a 5m trigger. |
+| Gap fill, but price is already near the prior day's close (short) | 30m | No trade | The gap fill's target is the prior day's close. With 1:1 or less left to it, no trade, however heavy it looks. |
 | No 5m wick fill, then the 30m wick fill | 30m | Trade | Once the 30m closed above the range, price wick filled the high of the 30m candle before it. That's the location, and the entry still needs a 5m trigger. The 30m is just this example; the fill can come on another higher timeframe. |
 
 ### 5. Trigger: do you enter at the last candle?
@@ -279,7 +342,7 @@ The canvas draws each of these as a chart. In the drill they come in random orde
 | Poke above the range high | 5m | Don't enter | It never closed above the range. Entering mid-candle is the trade that goes on to test the range low. |
 | Takes the low, closes in the wick zone | 5m | Don't enter | The zone between the low and the open is where sellers wick fill. That's not a reclaim. |
 | Takes the low, engulfing close above the open | 5m | Enter | A reclaim entry. |
-| Inside day, 5m close above the premarket range | 5m | Enter | Quarter size. Like a daily candle that held the range lows, premarket held near the prior day's low. A 5m close above the premarket range is the trigger. |
+| Leaking the range low, candle still open | 5m | Don't enter | Price can leak a range. Do nothing until the candle closes. |
 | Strong displacement, no wick fill | 5m | Enter | A wick doesn't have to fill. This is an unconfirmed entry: half size. If it does go back in the range, invalidation takes you out. |
 
 ### 6. Managing the trade: you're long, what do you do?
@@ -300,7 +363,6 @@ Prices read off your screenshot, so they're approximate.
 ## Open items
 
 - Runner exit rule.
-- Mean reversion setups (deferred, not traded for now).
 - What counts as a target.
 - Options: strike, expiration, and premium risk per trade.
 - Order types: stop and profit orders placed at entry, buy-stop entries after the 5m close.
