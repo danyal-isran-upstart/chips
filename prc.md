@@ -121,8 +121,9 @@ One standard for every range, on any timeframe: premarket, 30m, 4h, the prior da
 
 Only valid inside the step 4 location. Always wait for the candle to close.
 
-- **Confirmed entry, full size:** after a 5m close above the range, price wick fills and rejects. Enter on the break of the 5m high.
-- **Confirmed entry, full size:** 5m engulfing bar closes below a key range low, the next 5m bar is shallow and closes heavy below the range it broke.
+- **Confirmed entry, full size:**
+  - after a 5m close above the range, price wick fills and rejects. Enter on the break of the 5m high.
+  - 5m engulfing bar closes below a key range low, the next 5m bar is shallow and closes heavy below the range it broke.
 - **Unconfirmed entry, half size:** a 5m candle displaces above the range without a wick fill.
   - **A wick doesn't have to fill:** with strong displacement out of a range, price may never come back for the wick fill. On a trade that passes every rule, going back into the range is low probability, and if it does, your invalidation takes you out.
   - **The wick fill can come on a higher timeframe:** sometimes there's no wick fill on the 5m, but once a higher-timeframe candle closes above the range, price wick fills the high or close of the candle before it on that timeframe. The 30m is one example. It's not a fixed rule for every trade.
